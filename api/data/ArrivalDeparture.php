@@ -54,10 +54,7 @@ class ArrivalDeparture {
 
     function shouldHaveLeftAt(DateTime $atTime)
     {
-    		if($atTime->getTimeStamp() > $this->date->getTimeStamp())
-    			return true;
-    		else
-    			return false;
+    	return ($atTime->getTimeStamp() > $this->date->getTimeStamp());
     }
 
 }
