@@ -29,11 +29,9 @@ class Connection {
     }
 
 	 public function hasVias() {
-	 	if(count($this->vias) > 0)
-	 		return true;
-	 	else
-	 		return false;
+	 	return (count($this->vias) > 0);
 	 }
+	
     public function getDuration() {
         return $this->duration;
     }
